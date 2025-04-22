@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+button{
+    background: transparent;
+    cursor: pointer;
+    border: transparent;
+}
+.wrapper{
+    overflow: hidden;
+    background-color: #0B1D26;
+}
+.header {
+    width: 91.7%;
+margin-top: 20px;
+}
+.header__box {
+    display: flex;
+    justify-content: space-between;
+}
+.logo {
+    background: url("../img/Logo.svg") center no-repeat;
+    width: 108px;
+    height: 24px;
+    display: inline-block;
+}
+.nav_menu {
+    display: flex;
+    justify-content: space-between;
+    width: 16.1%;
+}
+.nav_menu__item {
+font-size: 18px;
+color: #ffffff;
+font-weight: bold;
+text-decoration: none;
+}
+.header__accound-box {
+    display: flex;
+    justify-content: space-between;
+    width: 100px;
+    align-items: center;
+}
+.header__account-icon {
+    background: url("../img/account-icon.svg") center no-repeat;
+    width: 24px;
+    height: 24px;
+}
+.header__account-text {
+    font-size: 17px;
+    color: #ffffff;
+    font-weight: bold;
+    text-decoration: none;
+}
