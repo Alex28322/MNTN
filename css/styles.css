@@ -84,7 +84,7 @@ button {
 }
 
 .hero__layer-1 {
-  background: url("../img/layer-1.png") center no-repeat;
+  background: url("../img/layer-1copy.png") center no-repeat;
   top: -10vw;
   right: -20vw;
   left: -20vw;
@@ -232,6 +232,7 @@ button {
   color: #ffffff;
   align-items: center;
   margin-top: -600px;
+  background-color: #0B1D26;
 }
 
 .gear {
@@ -251,7 +252,7 @@ button {
 .hiker__content {
   position: relative;
   z-index: 2;
-  width: 45.2%;
+  width: 43.2%;
 }
 
 .hiker__subtitle {
@@ -338,4 +339,16 @@ button {
   font-weight: 700;
   color: #ffffff;
   margin-bottom: 16px;
+}
+
+@media (max-width: 1440px) {
+  .hero__layer-1 {
+    margin-top: -700px;
+  }
+  .hero__layer-2 {
+    margin-top: -250px;
+  }
+  .hiker {
+    margin-top: -1050px;
+  }
 }/*# sourceMappingURL=styles.css.map */
