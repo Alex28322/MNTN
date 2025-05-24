@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
 }
+html {
+  scroll-behavior: smooth;
+}
 button{
     background: transparent;
     cursor: pointer;
@@ -28,7 +31,8 @@ margin-top: 20px;
 .nav_menu {
     display: flex;
     justify-content: space-between;
-    width: 16.1%;
+    width: 20%;
+    margin-left: 100px;
 }
 .nav_menu__item {
 font-size: 18px;
@@ -46,6 +50,12 @@ text-decoration: none;
     background: url("../img/account-icon.svg") center no-repeat;
     width: 24px;
     height: 24px;
+}
+.nav_menu-mob{
+    display: none;
+    width: 24px;
+    height: 24px;
+    background: url("../img/menu-mob.svg") center no-repeat;
 }
 .header__account-text {
     font-size: 17px;

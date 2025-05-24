@@ -1,5 +1,8 @@
 .main {
 }
+a{
+    text-decoration: none;
+}
 .hero {
 perspective: 1000px;
     position: relative;
@@ -16,20 +19,20 @@ perspective: 1000px;
 position: absolute;
 }
 :root{
-
+--index: calc(1vw + 1vh);
 }
 .hero__layer-1{
     background: url("../img/layer-1copy.png") center no-repeat;
     top: -10vw;
     right: -20vw;
     left: -20vw;
-    bottom:0;
+    bottom:500px;
     background-size: contain;
     transform: translateZ(-200px) scale(1.1);
 }
 .hero__layer-2{
     background: url("../img/layer-2.png") center top no-repeat;
-    top: 700px;
+    top: 600px;
     right: -20vw;
     bottom: -10vw;
     left: -20vw;
@@ -104,7 +107,7 @@ width: 50%;
 margin-top: 32px;
 }
 .hero__intro-down-scroll-text {
-    font-size: 18px;
+    font-size: 24px;
     color: #ffffff;
     font-weight: bold;
 }
@@ -173,7 +176,7 @@ width: 43.2%;
     position: absolute;
 z-index: 1;
 font-size: 240px;
-color: #ffffff1c;
+color: #ffffff37;
 left: -140px;
 top: -170px;
 }
@@ -252,8 +255,23 @@ margin-bottom: 24px;
     font-weight:700;
     color: #ffffff;
     margin-bottom: 16px;
+
 }
-@media(max-width:1440px){
+.gear__img{
+    background: url("../img/gear__img.png") center left no-repeat !important; 
+}
+.map__img{
+    background: url("../img/map__img.png") center no-repeat !important;
+}
+@media(min-width:1640px){
+    .hero__layer-2{
+    margin-top: -250px;
+    right: -30vw;
+    left: -30vw;
+    background-size: cover;
+    }
+}
+@media(max-width:1640px){
     .hero__layer-1{
         margin-top: -700px;
     }
@@ -263,4 +281,135 @@ margin-bottom: 24px;
     .hiker{
         margin-top: -1050px;
     }
+    .conteiner{
+        padding: 100px 80px;
+    }
+    .hiker__subtitle{
+        left: -70px;
+    }
+}
+@media(max-width:1280px){
+.hero__layer-1{
+    bottom: 500px;
+}
+    .hero__layer-2{
+        margin-top: -400px;
+    }
+    .nav_menu{
+        width: 30%;
+    }
+    .hiker__img {
+        background: url("../img/hiker__img.png") center bottom no-repeat;
+width: 400px;
+    height: 500px;
+    }
+}
+@media(max-width:900px){
+.hero__layer-1{
+    bottom:800px;
+}
+.hero__layer-2{
+    margin-top: -550px;
+}
+.hero__intro-title{
+    font-size: 50px;
+}
+.socials-box{
+    margin-left: -60px;
+}
+.nav_menu{
+    margin-left: 0px;
+    width: 40%;
+}
+.hiker{
+    margin-top: -1450px;
+}
+.hiker__subtitle{
+            font-size: 140px;
+        left: -65px;
+        top: -100px;
+}
+.hiker__title {
+    font-size: 40px;
+}
+.hiker__img {
+        background: url("../img/hiker__img.png") center bottom no-repeat;
+        width: 300px;
+    height: 420px;
+    order: 2;
+    margin-top: 70px;
+}
+.main__item{
+flex-wrap: wrap;
+        justify-content: center;
+}
+}
+@media(max-width:665px){
+    .hero__layer-1{
+        bottom: 1050px;
+    }
+    .hero__layer-2{
+        margin-top: -650px;
+    }
+    .nav_menu{
+        display: none;
+    }
+    .nav_menu-mob{
+        display: block;
+    }
+    .header__accound-box{
+        display: none;
+    }
+    .hiker{
+        margin-top: -1650px;
+    } 
+    .hiker__content{
+        width: 100%;
+    }
+.hero__intro-box{
+    width: 100%;
+    text-align: center;
+}
+.hero__intro-down-scroll{
+    margin: 32px auto;
+}
+.hero__layer-4{
+padding: 70px 10px 20px;
+    justify-content: center;
+}
+.socials-box{
+    display: none;
+}
+.navigatoin-menu{
+    display: none;
+}
+.uppertitle{
+    margin-bottom: 0px;
+}
+.hero__intro-title{
+    font-size: 40px;
+}
+.footer__content{
+
+}
+}
+@media(max-width:450px){
+  .hero__layer-1{
+        bottom: 1250px;
+    }
+        .hero__layer-2{
+        margin-top: -750px;
+    }
+    .hero__layer-4{
+padding: 30px 10px 20px;
+}
+.hero__intro-title{
+    font-size: 30px;
+}
+.uppertitle{
+    font-size: 14px;
+}
+.uppertitle::before{
+        border: #FBD784 1px solid;
+}
 }
